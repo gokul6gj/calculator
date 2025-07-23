@@ -23,7 +23,8 @@ pipeline {
           stage('js') {
             steps {
                 sh '''
-                    npx jest script.js
+                    npm install
+                    npm test script.js
                 '''
             }
         }
