@@ -21,10 +21,15 @@ pipeline {
             }
         }
           stage('js') {
+              agent {
+        docker {
+            image 'node:18'
+        }
+    }
             steps {
                 sh '''
-                    npm install
-                    npm test script.js
+            
+                    node script.js
                 '''
             }
         }
