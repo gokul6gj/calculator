@@ -16,7 +16,7 @@ calculator_project
 	sudo apt update
 	sudo apt install docker.io -y
 	sudo systemctl enable docker
-	sudo systemctl start docker
+	sudo systemctl start docker 
 
 4) Added my EC2 user to the Docker group to use Docker without sudo. ✅
 
