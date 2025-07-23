@@ -20,20 +20,7 @@ pipeline {
                 '''
             }
         } 
-          stage('js') {
-              agent {
-        docker {
-            image 'node:18'
-        }
-    }
-            steps {
-                sh '''
-            
-                    node script.js
-                '''
-            }
-        }
-
+       
         stage('Run Container (Test)') {
             steps {
                 sh '''
