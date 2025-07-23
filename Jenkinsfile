@@ -19,7 +19,7 @@ pipeline {
                     docker build -t $IMAGE_NAME:$IMAGE_TAG .
                 '''
             }
-        }
+        } 
           stage('js') {
               agent {
         docker {
