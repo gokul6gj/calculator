@@ -10,7 +10,7 @@ pipeline {
         stage('Clone Source') {
             steps {
                 git url: 'https://github.com/gokul6gj/calculator.git', branch: 'main'
-            }
+            } 
         }
 
         stage('Build Docker Image') {
